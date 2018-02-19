@@ -34,6 +34,7 @@ Abstract Class
 	can implement an interface
 4. abstract class cannot be final 
 5. abstract class can have following members:
+	
 	a. abstract methods
 	b. concrete methods
 	c. static or not static fields
@@ -57,5 +58,7 @@ Final Methods
 
 Links
 -----------------
-* [Static Modifier] (StaticModifier.md)
-* [Final Modifier] (FinalModifier.md)
+* [Static Modifier](./StaticModifier.md) 
+* [Final Modifier](./FinalModifier.md) 
+* [Abstract Modifier](./AbstactClass.md) 
+
