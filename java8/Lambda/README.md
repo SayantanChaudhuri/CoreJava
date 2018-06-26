@@ -21,6 +21,34 @@ Introduced in Java 8. It is having following features
 	4.  (int a, int b) -> (a + b) / (a / b) 
 
 
+### Lambda Context
+
+1.  [Assignment Context](AssignmentContextLambda.java "AssignmentContextLambda") 
+2.  [Method Invocation Context](MethodInvocationContextLambda.java "MethodInvocationContextLambda") / Constructor Arguments
+3.  [Return Context](ReturnContextLambda.java "ReturnContextLambda")
+4.  [Cast Context](CastContextLambda.java "CastContextLambda")
+5.  [An Array Initializer](ArrayInitilizerContextLambda.java, "ArrayInitilizerContextLambda")
+6.  [A ternary condition initializer](TernaryContextLambda.java, "TernaryContextLambda.java")
+7.  A variable declaration
+
+
+### Lambda Scope
+
+A lambda expression does not define a scope of its own.
+If we use keywords this and super in lambda expression inside a method, they act the same as we use them in that method.
+
+[Scope Lambda](ScopeLambda.java "ScopeLambda") 
+
+
+### Variables
+
+In lambda expression can access following types of variables
+
+*   Local Variable Final / Non Final -- These are effective final variable
+*   Static Class Variable / Non local Variable -- These can be changed inside lambda expression 
+
+[Variables Lambda](VariableCaptureLambda.java "VariableCaptureLambda")
+
 
 ### Effective Final example
 	
@@ -137,10 +165,10 @@ Java Code : [PolyExpressionLambda](PolyExpressionLambda.java "PolyExpressionLamb
 	*   To an instance method of an existing object	(ContainingType::methodName)
 	*   To a constructor	(ClassName::new)
 	
-Java Code : [MethodReferences](MethodReferences "MethodReferences.java") 
+Java Code : [MethodReferences](MethodReferences.java "MethodReferences.java") 
 
 Some more examples
 	
-*   Runnable Lambda Expression [RunnableLambda](RunnableLambda "RunnableLambda.java") 
-*   Callable Lambda Expression [CallableLambda](CallableLambda "CallableLambda.java")
-*	Comparator Lambda Expression [ComparatorLambda](ComparatorLambda "ComparatorLambda.java")
+*   [Runnable Lambda Expression](RunnableLambda.java "RunnableLambda") 
+*   [Callable Lambda Expression](CallableLambda.java "CallableLambda")
+*	[Comparator Lambda Expression](ComparatorLambda.java "ComparatorLambda")
